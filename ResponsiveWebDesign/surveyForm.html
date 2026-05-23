@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Gaming Preferences Survey</h1>
+    <p id="description">Help us understand what types of games players enjoy the most, their favorite platforms, and what features matter most in modern gaming experiences.</p>
+
+    <form id="survey-form">
+      <label id="name-label">Full Name</label>
+      <input id="name" type="text" required placeholder="Enter your full name"><br>
+
+      <label id="email-label">Email Address</label>
+      <input id="email" type="email" required placeholder="Enter your email"><br>
+
+      <label id="number-label">Age</label>
+      <input id="number" type="number" min="13" max="99" placeholder="Enter your age"><br>
+
+      <p>What is your primary gaming platform?</p>
+      <select id="dropdown">
+        <option>PC</option>
+        <option>PlayStation</option>
+        <option>Xbox</option>
+        <option>Nintendo Switch</option>
+        <option>Mobile</option>
+      </select>
+
+      <p>How often do you play video games?</p>
+      <input type="radio" value="daily" name="frequency">
+      <label>Daily</label>
+      <input type="radio" value="weekly" name="frequency">
+      <label>Weekly</label>
+      <input type="radio" value="occasionally" name="frequency">
+      <label>Occasionally</label>
+      <input type="radio" value="rarely" name="frequency">
+      <label>Rarely</label>
+
+      <p>What game genres do you enjoy?</p>
+      <input type="checkbox" value="action">
+      <label>Action</label>
+      <input type="checkbox" value="rpg">
+      <label>RPG</label>
+      <input type="checkbox" value="strategy">
+      <label>Strategy</label>
+      <input type="checkbox" value="sports">
+      <label>Sports</label>
+      <input type="checkbox" value="horror">
+      <label>Horror</label>
+      <input type="checkbox" value="simulation">
+      <label>Simulation</label>
+
+      <p>Additional Comments</p>
+      <textarea placeholder="Tell us about your favorite games or gaming experiences..."></textarea><br>
+
+      <input id="submit" type="submit">
+    </form>
+  </body>
+</html>
